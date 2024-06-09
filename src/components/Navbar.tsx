@@ -23,7 +23,7 @@ const Navbar = () => {
         }
     })
   return (
-    <header className="fixed max-container w-full text-white p-2">
+    <header className="fixed z-30 max-container w-full text-white p-2">
 	<div className="container flex items-center justify-between h-16 mx-auto">
 		<Link rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="relative w-20 h-10">
 			<Image src='/photonLogo.png' fill className='object-contain' alt='photon rider logo' />
