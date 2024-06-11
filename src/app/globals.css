@@ -63,6 +63,19 @@ body {
   }
 }
 
+.hud {
+  animation: spin1 10s infinite linear;
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes rotate {
   100% {
     transform: rotate(360deg);

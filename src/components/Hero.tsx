@@ -29,7 +29,7 @@ const Hero = () => {
 
     gsap.to('.smallText', {
       opacity: 1,
-      delay: 3
+      delay: 2
     });
     const tl = gsap.timeline();
 
