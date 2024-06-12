@@ -13,7 +13,7 @@ const Roadmap = () => {
     const milestoneElements = document.getElementsByClassName('milestone');
     const milestones = gsap.utils.toArray(milestoneElements);
 
-    milestones.forEach((ele) => {
+    milestones.forEach((ele: any) => {
       gsap.from(ele, {
         x: 500,
         scrollTrigger: {

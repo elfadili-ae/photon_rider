@@ -14,7 +14,7 @@ const Features = () => {
     const featElements = document.getElementsByClassName('feat');
     const feats = gsap.utils.toArray(featElements);
 
-    feats.forEach((feat, index) => {
+    feats.forEach((feat:any, index) => {
       let dir = -1
       if (index % 2 === 0) {dir = 1} 
       gsap.to(feat, {
@@ -44,7 +44,7 @@ const Features = () => {
     titles.forEach((ele, index) => {
       // gsap.set((ele), { autoAlpha: 0 }); 
 
-      titles.forEach((ele, index) => {
+      titles.forEach((ele: any, index) => {
         gsap.to(ele, {
           y: 400,
           scrollTrigger: {
