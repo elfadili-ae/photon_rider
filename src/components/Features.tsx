@@ -62,12 +62,14 @@ const Features = () => {
     const phrases = ["You're Limitless", "a Legend", "Light Speed"];
     const colors = ["#14b8a6", "#9966ff", "#ff0066"];
   
-    const toChange = document.getElementsByClassName("tochange");
+    const toChange = document.getElementById("toChange");
   
     const changeText = () => {
       if (i >= phrases.length) {i = 0}
-      toChange[0].textContent = phrases[i];
-      toChange[0].style.color = colors[i];
+      if (toChange) {
+        toChange.textContent = phrases[i];
+        toChange.style.color = colors[i];
+      }
       i += 1
     }
   
@@ -121,7 +123,7 @@ const Features = () => {
         <div className='relative w-full h-[51vh] sm:h-[100vh] overflow-y-hidden'>
           <Image fill src='/car1.jpg' alt='photon car photo' className='object-contain sm:object-cover' />
           <div className='movingTitle absolute top-0 left-0 py-4 bg-black/50 backdrop-blur-sm w-full text-center'>
-            <h1 className='text-2xl md:text-5xl font-bold text-white'>Drive like <span className='text-teal-500 tochange'>You&apos;re Limitless</span></h1>
+            <h1 className='text-2xl md:text-5xl font-bold text-white'>Drive like <span id='toChange' className='text-teal-500'>You&apos;re Limitless</span></h1>
           </div>
         </div>
     </section>
