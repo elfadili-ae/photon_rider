@@ -26,7 +26,7 @@ const Roadmap = () => {
     })
   })
   return (
-    <section className="w-full max-container overflow-x-hidden">
+    <section id='roadmap' className="w-full max-container overflow-x-hidden">
   <div className="p-4 mt-4">
     <h3 className="text-xl text-indigo-400 text-center font-semibold mb-1">Roadmap</h3>
     <h2 className='text-4xl text-white text-center font-bold mb-12'>The car that evolves and<br/> grows with you.</h2>

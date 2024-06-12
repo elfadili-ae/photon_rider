@@ -77,7 +77,7 @@ const Features = () => {
   });
 
   return (
-    <section className='relative min-h-[200vh] w-full max-container overflow-x-hidden bg-gradient-to-r from-black via-black/80 to-black/10'>
+    <section id='features' className='relative min-h-[200vh] w-full max-container overflow-x-hidden bg-gradient-to-r from-black via-black/80 to-black/10'>
         <div className='pt-40 p-4 flex flex-col justify-between items-center w-full h-full z-[2]'>
         
         <div className='feat opacity-20 relative bg-black text-white w-full p-5 md:max-w-[50%] border-2 border-teal-500 rounded-lg'>

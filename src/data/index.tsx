@@ -6,19 +6,19 @@ type navlinks = {
 export const navbarLinks: navlinks[] = [
     {
         name: 'Overview',
-        url: '/'
+        url: '#hero'
     },
     {
         name: 'features',
-        url: '/'
+        url: '#features'
     },
     {
         name: 'Roadmap',
-        url: '/'
+        url: '#roadmap'
     },
     {
         name: 'FAQ',
-        url: '/'
+        url: '#faq'
     },
 ]
 
