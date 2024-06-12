@@ -1,4 +1,7 @@
+import BuyNow from "@/components/BuyNow";
+import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Roadmap from "@/components/Roadmap";
@@ -11,8 +14,9 @@ export default function Home() {
       <Hero/>
       <Features />
       <Roadmap/>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
+      <FAQ/>
+      <BuyNow/>
+      <Footer />
     </main>
   );
 }
