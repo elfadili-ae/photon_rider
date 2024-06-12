@@ -36,7 +36,7 @@ const Roadmap = () => {
 
       {roadmapMilestones.map((milestone, index) => {
         if (milestone.state === "done") {
-          return <div className="flex md:contents">
+          return <div key={index} className="flex md:contents">
           <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
             <div className="h-full w-6 flex items-center justify-center">
               <div className="h-full w-1 bg-teal-500 pointer-events-none"></div>
@@ -56,7 +56,7 @@ const Roadmap = () => {
         </div>
         }
         else {
-          return  <div className="flex md:contents">
+          return  <div key={index} className="flex md:contents">
           <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
             <div className="h-full w-6 flex items-center justify-center">
               <div className="h-full w-1 bg-gray-300 pointer-events-none"></div>
